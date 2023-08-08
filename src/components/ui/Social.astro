@@ -1,23 +1,27 @@
 ---
 import { Icon } from 'astro-icon';
+
+const SOCIALS = [
+	{
+		name: 'linkedin',
+		url: 'https://www.linkedin.com/in/diego-saravia-mamani/',
+		iconName: 'simple-icons:linkedin',
+	},
+	{
+		name: 'github',
+		url: 'https://github.com/diegosaraviamamani',
+		iconName: 'simple-icons:github',
+	},
+];
 ---
 
-<a href="https://github.com/diegosaraviamamani" target="_blank" rel="noopener" aria-label="github"
-	><Icon
-		class="h-8 hover:text-orange dark:hover:text-orange md:h-12"
-		name="simple-icons:github"
-	/></a
->
-<a
-	href="https://www.linkedin.com/in/diego-saravia-mamani/"
-	target="_blank"
-	rel="noopener"
-	aria-label="linkedin"
-	><Icon
-		class="h-8 hover:text-orange dark:hover:text-orange md:h-12"
-		name="simple-icons:linkedin"
-	/></a
->
+{
+	SOCIALS.map(({ iconName, name, url }) => (
+		<a href={url} target="_blank" rel="noopener" aria-label={name}>
+			<Icon class="h-8 hover:text-orange dark:hover:text-orange md:h-12" name={iconName} />
+		</a>
+	))
+}
 <!-- <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="twitter"
 	><Icon
 		class="h-8 hover:text-orange dark:hover:text-orange md:h-12"

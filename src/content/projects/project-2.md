@@ -1,7 +1,7 @@
 ---
 inProgress: false
-title: Project title
+title: Textilon ecommerce
 img_alt: project image alt text
-link: https://github.com/veranikabarel?tab=repositories
-tags: ['React', 'CSS', 'Typescript']
+link: https://textilon-frontend.vercel.app/
+tags: ['Vue', 'Tailwind', 'Typescript', 'Vercel']
 ---
